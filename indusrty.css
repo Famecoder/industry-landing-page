@@ -1,16 +1,27 @@
 :root {
   --fontFamily: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+  --footerBgcolor: #04091e;
+  --whiteColor: #fff;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;~
+  overflow-x: hidden;
 }
 
 html {
   scroll-behavior: smooth;
+}
+ul {
+  list-style: none;
 }
 
 header {
@@ -26,7 +37,7 @@ header {
 nav {
   width: 100vw;
   height: 5rem;
-  background-color: white;
+  background-color: var(--whiteColor);
   position: fixed;
 }
 
@@ -68,7 +79,7 @@ nav {
   position: absolute;
   top: 3.2rem;
   left: 67rem;
-  background-color: white;
+  background-color: var(--whiteColor);
   width: 17rem;
   height: 10rem;
   display: none;
@@ -93,7 +104,7 @@ nav {
 
 .div--industry {
   margin-top: 8rem;
-  color: white;
+  color: var(--whiteColor);
   text-align: center;
   font-family: var(--fontFamily);
 }
@@ -109,7 +120,7 @@ h1 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-p {
+.div--industry__desc {
   font-size: 1rem;
   width: 67rem;
   margin-left: 11rem;
@@ -124,11 +135,100 @@ p {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-.about {
-  background-color: rebeccapurple;
+.footer {
+  background-color: var(--footerBgcolor);
+
+  height: 70vh;
+}
+
+.footer-grid {
+  display: grid;
+  padding: 8rem 6rem;
+  grid-template-areas: "about-us newsletter follow-us";
+}
+
+.about-us {
+  grid-area: about-us;
+}
+
+.footer__desc {
+  margin: 2rem 0;
+  max-width: 30rem;
+  color: #777;
+  font-size: 1.2rem;
+}
+
+.footer__copyright {
+  color: #777;
+  font-size: 1rem;
+  max-width: 30rem;
+}
+
+.newsletter {
+  grid-area: newsletter;
+}
+
+.newsletter .footer__heading {
+  margin-bottom: 2rem;
+}
+
+.newsletter .newsletter__desc {
+  color: #777;
+  margin-bottom: 1rem;
+}
+
+.newsletter input {
+  padding: 0.7rem 1rem;
+  width: 25rem;
+  height: 1rem;
+  border: none;
+  color: var(--footerBgcolor);
+}
+
+.newsletter input:focus {
+  border: none;
+  outline: none;
+
+  padding: 0.7rem 1rem;
+}
+
+.newsletter input::placeholder {
+  text-transform: capitalize;
+  font-size: 1rem;
+}
+
+.follow-us {
+  grid-area: follow-us;
+}
+
+.follow-us p {
+  color: #777;
   margin: 2rem 0;
 }
 
-.contact {
-  background-color: orangered;
+.footer__heading {
+  color: var(--whiteColor);
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.footer__social-links {
+  display: flex;
+}
+
+.footer__social-links li {
+  width: 1.5rem;
+  background-color: rgba(119, 119, 119, 0.5);
+  color: var(--whiteColor);
+  margin: 0 0.2rem;
+}
+
+.footer__social-links img {
+  width: 100%;
+  height: 100%;
+}
+
+.footer__social-links li:hover {
+  background-color: rgba(119, 119, 119, 1);
 }
