@@ -6,7 +6,7 @@
 body {
   margin: 0;
   padding: 0;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;~
 }
 
 html {
@@ -37,7 +37,7 @@ nav {
 
 .industry__unorderlist {
   margin-top: -2rem;
-  margin-left: 45rem;
+  margin-left: 39rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
