@@ -1,134 +1,134 @@
-:root{
-    --fontFamily: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+:root {
+  --fontFamily: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-
-body{
-    margin: 0;
-    padding: 0;
-    /* overflow-x: hidden; */
+body {
+  margin: 0;
+  padding: 0;
+  /* overflow-x: hidden; */
 }
 
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
-header{
-    width: 100vw;
-    height: 100vh;
-    background-size: contain;
-    background:linear-gradient(rgba(0, 0, 0, 0.411), rgba(0, 0, 0, 0.274)),url(image/header-bg.jpeg);
-    /* border: 1px solid transparent; */
-    overflow: auto;
+header {
+  width: 100vw;
+  height: 100vh;
+  background-size: contain;
+  background: linear-gradient(rgba(0, 0, 0, 0.411), rgba(0, 0, 0, 0.274)),
+    url(image/header-bg.jpeg);
+  /* border: 1px solid transparent; */
+  overflow: auto;
 }
 
-nav{
-    width: 100vw;
-    height: 5rem;
-    background-color: white;
-    position: fixed;
+nav {
+  width: 100vw;
+  height: 5rem;
+  background-color: white;
+  position: fixed;
 }
 
-.industry__logo{
-    margin-top: 1.8rem;
-    margin-left: 7rem;
+.industry__logo {
+  margin-top: 1.8rem;
+  margin-left: 7rem;
 }
 
-.industry__unorderlist{
-    margin-top: -2rem;
-    margin-left: 48rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-    width: 35rem;
+.industry__unorderlist {
+  margin-top: -2rem;
+  margin-left: 45rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  width: 35rem;
 }
 
-.link{
-    text-decoration: none;
-    font-size: .8rem;
-    color: black;
-    font-family: 
+.link {
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: black;
+  font-family: ;
 }
 
-.blog--link{
-    text-decoration: none;
-    font-size: .8rem;
-    color: black;
-    font-family: var(--fontFamily);
+.blog--link {
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: black;
+  font-family: var(--fontFamily);
 }
 
-
-.dropdown:hover .dropdown--modal{
-    transition: all 200ms linear;
-    display: block;
+.dropdown:hover .dropdown--modal {
+  transition: all 200ms linear;
+  display: block;
 }
 
-.dropdown--modal{
-    position: absolute;
-    top: 3.2rem;
-    left: 67rem;
-    background-color: white;
-    width: 17rem;
-    height: 10rem;
-    display: none;
+.dropdown--modal {
+  position: absolute;
+  top: 3.2rem;
+  left: 67rem;
+  background-color: white;
+  width: 17rem;
+  height: 10rem;
+  display: none;
 }
 
-.dropdown--unorderlist{
-    margin-top: 2rem;
-    margin-left: -1.5rem;
+.dropdown--unorderlist {
+  margin-top: 2rem;
+  margin-left: -1.5rem;
 }
 
-.dropdown--list{
-    list-style: none;
-    line-height: 2.8rem;
+.dropdown--list {
+  list-style: none;
+  line-height: 2.8rem;
 }
 
-.link--dropdown{
-    text-decoration: none;
-    color: black;
-    font-size: .9rem;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+.link--dropdown {
+  text-decoration: none;
+  color: black;
+  font-size: 0.9rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.div--industry{
-    margin-top: 8rem;
-    color: white;
-    text-align: center;
-    font-family:  var(--fontFamily);
+.div--industry {
+  margin-top: 8rem;
+  color: white;
+  text-align: center;
+  font-family: var(--fontFamily);
 }
 
-h3{
-    font-size: .9rem;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: normal;
+h3 {
+  font-size: 0.9rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: normal;
 }
 
-h1{
-    font-size: 3.5rem;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+h1 {
+  font-size: 3.5rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-p{
-    font-size: 1rem;
-    width: 67rem;
-    margin-left: 11rem;
+p {
+  font-size: 1rem;
+  width: 67rem;
+  margin-left: 11rem;
 }
 
-.btn--div{
-    background-color: rgb(255, 196, 0);
-    display: inline-block;
-    padding: .7rem 2rem;
-    margin-top: 1rem;
-    border-radius: .1rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.btn--div {
+  background-color: rgb(255, 196, 0);
+  display: inline-block;
+  padding: 0.7rem 2rem;
+  margin-top: 1rem;
+  border-radius: 0.1rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-.about{
-    background-color: rebeccapurple;
-    margin: 2rem 0;
+.about {
+  background-color: rebeccapurple;
+  margin: 2rem 0;
 }
 
-.contact{
-    background-color: orangered;
+.contact {
+  background-color: orangered;
 }
